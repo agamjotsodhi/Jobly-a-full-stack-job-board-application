@@ -2,7 +2,7 @@ import JobCard from './JobCard.js';
 import { useParams } from 'react-router-dom';
 import JoblyApi from './api.js';
 import { useState, useEffect } from 'react';
-import './static/CompanyDetail.css';
+import './styles/CompanyDetail.css';
 
 const CompanyDetail = () => {
 	const { handle } = useParams();

@@ -1,5 +1,5 @@
 import { Button } from 'reactstrap';
-import './static/ApplyButton.css';
+import './styles/ButtonToApply.css';
 
 const ApplyButton = ({ success, apply }) => {
     return (

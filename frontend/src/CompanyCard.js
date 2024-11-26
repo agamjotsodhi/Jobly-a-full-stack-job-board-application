@@ -1,5 +1,5 @@
 import { Card, CardBody, CardTitle, CardText } from 'reactstrap';
-import './static/CompanyCard.css';
+import './styles/CompanyCard.css';
 
 const CompanyCard = ({ company }) => {
 	return (
