@@ -1,0 +1,108 @@
+nav {
+	box-shadow: 0 2px 2px 0 #cccccc, 0 3px 1px -2px #8a8dff, 0 1px 5px 0 #8a8dff;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.nav-item {
+	width: 100px;
+	text-align: center;
+	margin-right: 4rem;
+}
+
+nav a {
+	color: #1b1b1b;
+	text-decoration: none;
+}
+
+nav a.active {
+    font-weight: bold;
+    border-bottom: 3px solid #8a8dff; 
+    text-decoration: none; 
+    padding-bottom: 4px; 
+    box-sizing: border-box;
+}
+
+nav a.active:hover {
+	color: #c6c6c6 !important;
+}
+
+nav a:hover {
+	text-decoration: none;
+	color: #8a8dff;
+}
+
+nav a.active.navbar-brand {
+	border-bottom: none;
+	color: #1b1b1b;
+}
+
+nav a:not(.navbar-brand):hover {
+	font-weight: bold;
+}
+
+.navbar-brand {
+	color: #1b1b1b;
+}
+
+.navbar-brand:hover {
+	color: #8a8dff;
+}
+
+.Logout {
+	display: inline-block;
+}
+
+span {
+	vertical-align: text-bottom;
+	font-size: 1.125rem !important;
+}
+
+.NavLogo {
+	margin-left: 30px;
+	content: url('./images/Jobly-logo.png');
+	height: 8rem;
+}
+
+.me-2 {
+	background-color: #8a8dff;
+	border-color: white;
+	border-width: .1rem;
+}
+
+.register-btn {
+    color: #8a8dff;
+    border: 2px solid #8a8dff; 
+    border-radius: 15px; 
+    padding: 5px 10px;
+    font-weight: bold;
+    background-color: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: #8a8dff; 
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 600px) {
+	.collapse {
+		position: absolute;
+		right: 1rem;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.nav-item {
+		text-align: left;
+		margin-top: 1rem;
+	}
+}
+
+.nav-div {
+	width: 100%;
+}
+

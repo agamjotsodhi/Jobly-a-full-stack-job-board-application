@@ -1,0 +1,56 @@
+.HomePageContainer {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomeTextSection {
+	margin-left: 30px;
+    flex: 0.7;
+    padding: 2rem;
+    text-align: left; 
+    color: #333;
+}
+
+.HomeTextSection h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.HomeTextSection .Start {
+	margin-top: 15px;
+    background-color: #8a8dff;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #8a8dff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.HomeTextSection .Start:hover {
+    background-color: white;
+    color: #8a8dff;
+}
+
+.HomeImageSection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.HomeImage {
+	content: url('./images/HomeImage.png');
+    max-width: 100%;
+	margin-top: 10px;
+	height: 27rem;
+	margin-left: 20px;
+}
+
+

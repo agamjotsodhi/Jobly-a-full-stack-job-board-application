@@ -76,7 +76,7 @@ const SignupForm = ({ setTokenAfterRegister }) => {
 								/>
 							</div>
 							{response !== false ? <Alert type="danger" message={response[0]} /> : null}
-							<Button className="SignupButton" type="submit" size="lg">
+							<Button className="FormButton" type="submit" size="lg">
 								Submit
 							</Button>
 						</div>

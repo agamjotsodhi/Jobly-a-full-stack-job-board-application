@@ -70,7 +70,7 @@ const EditProfileForm = ({ editProfileInfo }) => {
 							{response !== false && response !== true ? (
 								<Alert type="danger" message={response[0]} />
 							) : null}
-							<Button className="EditProfileButton" type="submit" size="lg">
+							<Button className="FormButton" type="submit" size="lg">
 								Save Changes
 							</Button>
 						</div>

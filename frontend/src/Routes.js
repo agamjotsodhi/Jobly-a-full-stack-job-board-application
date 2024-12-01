@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import Home from './Homepage';
 import CompaniesList from './CompaniesList';
-import CompanyDetail from './CompanyDetail';
+import CompanyDetail from './CompanyDetails';
 import JobsList from './JobsList';
 import LoginForm from './LoginForm';
 import SignupForm from './SignupForm';

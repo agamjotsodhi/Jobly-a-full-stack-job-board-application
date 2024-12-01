@@ -1,0 +1,16 @@
+.Username,
+.Password,
+.LoginButton,
+h1 {
+	margin-top: 1rem;
+}
+
+.Username,
+.Password {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.FormContainer {
+	margin-top: 6rem;
+}

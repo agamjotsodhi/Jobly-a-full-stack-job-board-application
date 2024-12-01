@@ -10,8 +10,8 @@ const LoginForm = ({ setTokenAfterLogin }) => {
 	const [ response, setResponse ] = useState(false);
 	const { control, handleSubmit, reset } = useForm({
 		defaultValues: {
-			username: 'PashaLog',
-			password: 'Iloveemily'
+			username: 'TestUser123',
+			password: 'HelloWorld'
 		}
 	});
 
@@ -52,7 +52,7 @@ const LoginForm = ({ setTokenAfterLogin }) => {
 								/>
 							</div>
 							{response !== false ? <Alert type="danger" message={response} /> : null}
-							<Button className="LoginButton" type="submit" size="lg">
+							<Button className="FormButton" type="submit" size="lg">
 								Submit
 							</Button>
 						</div>

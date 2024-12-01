@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import JoblyApi from './api';
+import JoblyApi from './apiHelper.js';
 import { Link } from 'react-router-dom';
 import CompanyCard from './CompanyCard.js';
 import SearchForm from './SearchForm.js';
 import { Button } from 'reactstrap';
 
+//  Display a list of companies with search functionality
 const CompaniesList = () => {
-	const [ companies, setCompanies ] = useState([]);
-	const [ searchTerm, setSearchTerm ] = useState('');
-	const [ noCompaniesFound, setNoCompaniesFound ] = useState(false);
+	// State variables for storing companies, search term, and no results flag
+	const [companies, setCompanies] = useState([]);
+	const [searchTerm, setSearchTerm] = useState('');
+	const [noCompaniesFound, setNoCompaniesFound] = useState(false);
 
+	// Fetch companies based on the search term whenever it changes
 	useEffect(
 		() => {
 			async function getAllCompanies(name) {
@@ -18,18 +21,21 @@ const CompaniesList = () => {
 			}
 			getAllCompanies(searchTerm);
 		},
-		[ searchTerm ]
+		[searchTerm]
 	);
 
+	// Function to handle search input from the search form
 	const getSearchTerm = (data) => {
 		setSearchTerm(data.searchTerm);
 	};
 
+	// Function to reset the search term and no results flag
 	const resetSearch = () => {
 		setSearchTerm('');
 		setNoCompaniesFound(false);
 	};
 
+	// Render the search form, reset button, no results message, and list of companies
 	return (
 		<section>
 			<div>

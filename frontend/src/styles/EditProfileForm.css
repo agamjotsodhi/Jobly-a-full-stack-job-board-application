@@ -1,0 +1,62 @@
+.Password,
+.Firstname,
+.Lastname,
+.Email,
+.EditProfileButton,
+.alert-success,
+.alert-danger,
+h1 {
+	margin-top: 1rem;
+}
+
+/* Base form button design for application */
+.FormButton {
+	padding: 20px 25px;
+	margin-top: 30px;
+    background-color: #ffffff;
+    color: #572d83;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.FormButton:hover {
+	background-color: #444444;
+}
+
+.Password,
+.Firstname,
+.Lastname,
+.Email,
+.alert-success,
+.alert-danger {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+/* Base form styling for all forms on application */
+.FormContainer {
+	padding: 30px 20px;
+	margin-top: 4rem;
+	border-radius: 1rem;
+	/* change the rgb */
+	background: rgb(87,45,131);
+    background: linear-gradient(0deg, rgba(87,45,131,1) 0%, rgba(138,141,255,1) 100%);
+
+	box-shadow: 0 4px 8px rgba(20, 20, 20, 0.8);
+	color: rgb(255, 255, 255);
+}
+
+.alert-success {
+	border-radius: 1rem;
+	background-color: rgb(180, 215, 180, 0.8);
+}
+
+.alert-danger {
+	border-radius: 1rem;
+	background-color: rgb(253, 171, 171, 0.8);
+}

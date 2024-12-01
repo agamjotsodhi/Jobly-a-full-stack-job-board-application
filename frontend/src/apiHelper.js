@@ -35,15 +35,13 @@ class JoblyApi {
 
 	//  API routes
 
-	/** Get request per company details by handle. */
-
+	/** Fetch details for a specific company using its handle. */
 	static async getCompany(handle) {
 		let response = await this.request(`companies/${handle}`);
 		return response.company;
 	}
 
-	// Get entire list of companies & handle search queries.
-
+	/** Fetch all companies, optionally filter by name. */
 	static async getAllCompanies(name) {
 		let response;
 		name
@@ -52,46 +50,40 @@ class JoblyApi {
 		return response.companies;
 	}
 
-	// Get entire list of jobs & handle search queries.
-
+	/** Fetch all jobs, optionally filter by title. */
 	static async getAllJobs(title) {
 		let response;
 		title ? (response = await this.request(`jobs?title=${title}`)) : (response = await this.request(`jobs/`));
 		return response.jobs;
 	}
 
-	// Register someone in with this function, that should return a token.
-
+	/** Register a new user and return a token. */
 	static async registerUser(registerInfo) {
 		let response = await this.request('auth/register', registerInfo, 'post');
 		JoblyApi.token = response.token;
 		return response;
 	}
 
-	// Log someone in with this function, that should return a token.
-
+	/** Log in an existing user and return a token. */
 	static async loginUser(loginInfo) {
 		let response = await this.request('auth/token', loginInfo, 'post');
 		JoblyApi.token = response.token;
 		return response;
 	}
 
-	// Get user by username.
-
+	/** Fetch details for a specific user by username. */
 	static async getUser(username) {
 		let response = await this.request(`users/${username}`);
 		return response.user;
 	}
 
-	// Edit user's profile information.
-
+	/** Update a user's profile information. */
 	static async patchUser(username, newUserInfo) {
 		let response = await this.request(`users/${username}`, newUserInfo, 'patch');
 		return response;
 	}
 
-	// Add job application to user's info.
-
+	/** Submit a job application for a user. */
 	static async applyToJob(username, jobId) {
 		let response = await this.request(`users/${username}/jobs/${jobId}`, undefined, 'post');
 		return response;

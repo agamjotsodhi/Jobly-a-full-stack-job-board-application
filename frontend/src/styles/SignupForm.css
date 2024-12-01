@@ -1,0 +1,20 @@
+.Username,
+.Password,
+.Firstname,
+.Lastname,
+.Email,
+.SignupButton,
+h1 {
+	margin-top: 1rem;
+}
+
+
+.Username,
+.Password,
+.Firstname,
+.Lastname,
+.Email {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+

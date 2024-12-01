@@ -2,7 +2,7 @@ import { Card, CardBody, CardTitle, CardText } from 'reactstrap';
 import { useState, useContext } from 'react';
 import './styles/JobCard.css';
 import CurrentUserContext from './CurrentUserContext';
-import ApplyButton from './ApplyButton';
+import ApplyButton from './ButtonToApply';
 
 const JobCard = ({ job }) => {
 	const { currentUser, applyToJob } = useContext(CurrentUserContext);

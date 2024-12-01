@@ -1,3 +1,5 @@
+// Sets alert for error display messages 
+
 const Alert = ({ type, message }) => {
 	return (
 		<div className={`alert alert-${type}`} role="alert">

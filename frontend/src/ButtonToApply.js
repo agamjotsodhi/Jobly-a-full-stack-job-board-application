@@ -1,6 +1,8 @@
 import { Button } from 'reactstrap';
 import './styles/ButtonToApply.css';
 
+// Job apply button used on Jobs page
+
 const ApplyButton = ({ success, apply }) => {
     return (
         <div>

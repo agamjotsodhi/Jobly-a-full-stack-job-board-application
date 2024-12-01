@@ -1,6 +1,8 @@
 import { Card, CardBody, CardTitle, CardText } from 'reactstrap';
 import './styles/CompanyCard.css';
 
+// Company basic info on card format
+
 const CompanyCard = ({ company }) => {
 	return (
 		<div className="companyCard">

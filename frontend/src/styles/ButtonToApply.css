@@ -1,0 +1,8 @@
+.ApplyButton {
+	background-color: #080957;
+	border-color: white;
+}
+
+.ApplyButton:hover {
+	background-color: #8a8dff;
+}
